@@ -1,0 +1,180 @@
+.popular .container{
+  padding: 15px 15px;
+}
+
+.popular h2{
+  font-family: Maven Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-transform: uppercase;
+
+  color: #051521;
+
+}
+.card{
+  padding: 25px 16px;
+  background: #ffffff;
+  width: 264px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #343434;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  margin-right: 22px;
+  .card-inner{
+    flex-grow: 1;
+  }
+  .card-image-holder{
+    position: relative;
+    height: 190px;
+    margin-bottom: 30px;
+    img{
+      max-height: 100%;
+    }
+    .discount-img{
+      width: 50px;
+      position: absolute;
+      top: -17px;
+      left: 23px;
+      z-index: 1;
+      display: none;
+    }
+  }
+  .card__icon-list{
+    margin-bottom: 38px;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    a{
+      text-decoration: none;
+      color: #C4C4C4;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .star-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 13px;
+    .rating-row{
+      display: flex;
+    }
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 66px;
+    .title-link{
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      flex-grow: 1;
+      transition: all .3s ease;
+      &:hover{
+        transform: scale(1.01);
+      }
+      .card-title{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 14px;
+        margin-top: 0;
+      }
+    }
+    .old-price{
+      font-size: 14px;
+      color: #989898;
+      margin-right: 13px;
+      display: none;
+    }
+    .current-price{
+      font-family: Maven Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #F75555;
+    }
+  }
+  .card--button{
+    padding: 14px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    &:hover{
+      box-shadow: 2px 2px 2px 2px #F75555;
+    }
+  }
+  .available{
+    display: none;
+  }
+  .available:before{
+    content: '';
+    width: 13px;
+    height: 8px;
+    border-right: 2px solid #64CA53;
+    border-top: 2px solid #64CA53;
+    display: inline-block;
+    transform: rotate(135deg);
+    margin-right: 5px;
+  }
+  .not-available{
+    display: none;
+  }
+  .not-available:before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background: url("../images/clock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+  }
+  a.link-img:hover>img{
+    filter: drop-shadow(2px 2px 5px #C4C4C4);
+  }
+}
+
+.card--available{
+  .available{
+    display: block;
+  }
+}
+
+.card--not-available{
+  .not-available{
+    display: block;
+  }
+}
+
+.card--discount{
+  .card-image-holder{
+    .discount-img{
+      display: block;
+    }
+  }
+  .price-holder{
+    .old-price{
+      display: inline-block;
+    }
+  }
+}
+
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+}

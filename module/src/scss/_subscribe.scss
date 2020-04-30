@@ -1,0 +1,177 @@
+.subscribe {
+  background: #ebecee;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__promo {
+    color: #343434;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Maven Pro", sans-serif;
+
+    p {
+      margin: 0;
+    }
+
+    &__discount {
+      font-size: 64px;
+      line-height: 75px;
+      color: #F75555;
+      font-weight: bold;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .button--subscribe {
+      padding: 11px 32px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    input {
+      border: unset;
+      background: transparent;
+      height: 100%;
+      width: 100%;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+        color: #486175;
+      }
+    }
+  }
+
+  &__input-wrapper {
+    height: 46px;
+    width: 228px;
+    margin-right: 20px;
+    border-bottom: 1px solid #92A4B1;;
+
+    &:last-child {
+      margin-right: 56px;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .container {
+    justify-content: center;
+  }
+  .subscribe__promo {
+    margin: 0 auto 40px auto;
+  }
+
+  .subscribe__sub {
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .subscribe__promo {
+    text-align: center;
+  }
+
+  .subscribe__sub {
+    flex-direction: column;
+  }
+
+  .subscribe__form {
+    margin-bottom: 40px;
+  }
+
+  .subscribe__input-wrapper {
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .subscribe__pic {
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 506px) {
+  .subscribe__form {
+    flex-direction: column;
+    .subscribe__input-wrapper {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .subscribe {
+    background-image: url("../images/subs-mountain.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .subscribe__pic {
+    display: none;
+  }
+
+  .subscribe__promo {
+    margin-bottom: 0;
+
+  p{
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+    &__discount {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    &__desc {
+      text-align: left;
+    }
+  }
+
+  .subscribe__sub {
+    width: 100%;
+
+    .subscribe__form {
+      width: 100%;
+    }
+
+    .subscribe__input-wrapper {
+      width: 100% ;
+
+      input {
+
+        &::placeholder {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

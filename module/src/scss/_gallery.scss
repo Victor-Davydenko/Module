@@ -1,0 +1,39 @@
+.gallery {
+
+  &__holder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    max-width: 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(2, 26, 55, 0.7);
+    }
+  }
+
+  &__link {
+    display: block;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
