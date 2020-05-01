@@ -17,19 +17,19 @@ $(document).ready(function(){
 });
 
 $('#star').raty({
-    path: "../images"
+    path: "images"
 });
 
 $('#star1').raty({
-    path: "../images"
+    path: "images"
 });
 
 $('#star2').raty({
-    path: "../images"
+    path: "images"
 });
 
 $('#star3').raty({
-    path: "../images"
+    path: "images"
 });
 
 $(document).ready(function(){
