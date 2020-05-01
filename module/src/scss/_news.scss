@@ -2,8 +2,11 @@
   padding: 0 0 32px 0;
 
   &__block {
+    display: block;
     max-width: 264px;
     margin: 0 15px;
+    outline: none;
+    text-decoration: none;
 
     &__pic {
       margin-bottom: 20px;
