@@ -1,8 +1,92 @@
 .gallery {
+  margin-bottom: 23px;
+
+  &__main {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(2, 26, 55, 0.7);
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__holder {
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 19%;
+    left: 19%;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    padding-right: 10px;
+
+    h3 {
+      font-size: 24px;
+      font-family: "Maven Pro", sans-serif;
+      color: #fff;
+      margin: 0 0 6px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+
+    &--bigger {
+      bottom: 8%;
+      left: 8%;
+      font-size: 24px;
+      line-height: 28px;
+
+      h3 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    .gallery__btn {
+      padding: 11px 80px;
+      background: transparent;
+      border: 3px solid #F75555;
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 50%;
+        right: 21px;
+        transform: translateY(-50%);
+      }
+
+    }
+  }
+
+  &__item-count {
+    color: #F75555;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+
+    &--big {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 
   &__list {
@@ -18,6 +102,7 @@
   &__item {
     max-width: 50%;
     position: relative;
+    overflow: hidden;
 
     &:before {
       content: "";
@@ -25,6 +110,13 @@
       height: 100%;
       width: 100%;
       background: rgba(2, 26, 55, 0.7);
+      pointer-events: none;
+    }
+
+    &:hover {
+      .gallery__item:before {
+        background: black;
+      }
     }
   }
 
@@ -34,6 +126,110 @@
     img {
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
+
+    :hover {
+      .gallery__item:before {
+        background: black
+      }
+    }
+  }
+
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    &__holder {
+      flex-direction: column;
+    }
+
+    &__main {
+      height: 400px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__list {
+      max-width: 100%;
+    }
+
+    &__item {
+      flex-grow: 1;
+
+      img {
+        width: 100%;
+        max-height: 200px;
+      }
+    }
+
+    &__text {
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .gallery {
+
+    &__main {
+      max-height: 230px;
+    }
+
+    &__item {
+      max-height: 120px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+
+      h3 {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 16px;
+
+        .gallery__item-count--big {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+
+      .gallery__item-count {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      &--bigger {
+        font-size: 24px;
+        line-height: 28px;
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 374px) {
+  .gallery__text .gallery__btn {
+    padding: 6px 20px;
+    font-size: 16px;
+
+    i {
+      right: 10px;
+    }
+  }
+
+  .gallery__text {
+    left: 10%;
   }
 }

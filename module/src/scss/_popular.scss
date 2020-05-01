@@ -15,6 +15,7 @@
 
 }
 .card{
+
   padding: 25px 16px;
   background: #ffffff;
   width: 264px;
@@ -31,6 +32,7 @@
   margin-right: 22px;
   .card-inner{
     flex-grow: 1;
+    margin-bottom: 10px;
   }
   .card-image-holder{
     position: relative;
@@ -38,6 +40,7 @@
     margin-bottom: 30px;
     img{
       max-height: 100%;
+      display: inline-block;
     }
     .discount-img{
       width: 50px;
@@ -65,12 +68,13 @@
   }
   .star-rating{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 40px;
     margin-bottom: 13px;
     .rating-row{
       display: flex;
+      margin-right: 10px;
     }
   }
   .card-content{
