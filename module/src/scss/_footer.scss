@@ -71,6 +71,8 @@
 
   &__list {
     max-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
 
     a {
       display: inline-block;
