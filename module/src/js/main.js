@@ -32,14 +32,31 @@ $('#star3').raty({
     path: "images"
 });
 
+$('#star5').raty({
+    path: "images"
+});
+
+$('#star6').raty({
+    path: "images"
+});
+
+$('#star7').raty({
+    path: "images"
+});
+
+$('#star8').raty({
+    path: "images"
+});
+
 $(document).ready(function(){
     $('.popular__slider').slick({
         dots:false,
         arrows: true,
-        autoplay:true,
-        slidesToShow: 4,
+        autoplay:false,
+        slidesToShow: 1,
         slidesToScroll:1,
-        variableWidth: true
+        variableWidth: true,
+        infinite: true
     });
 });
 
