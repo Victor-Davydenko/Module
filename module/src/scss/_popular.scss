@@ -1,22 +1,30 @@
+.popular{
+  margin-bottom: 39px;
+  a{
+    outline: none;
+  }
+}
+
 .popular .container{
-  padding: 15px 15px;
+  padding: 45px 15px;
 }
 
 .popular h2{
-  font-family: Maven Pro;
+  font-family: "Maven Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-
   text-transform: uppercase;
-
   color: #051521;
+  margin: 0;
+  margin-bottom: 33px;
 
 }
 .card{
-
-  padding: 25px 16px;
+  .card-wrapper{
+   padding: 25px 16px;
+    height: 100%;
   background: #ffffff;
   width: 264px;
   font-family: Source Sans Pro;
@@ -28,11 +36,9 @@
   color: #343434;
   display: flex;
   flex-direction: column;
-  min-height: 520px;
-  margin-right: 22px;
+  margin-right: 31px;
   .card-inner{
     flex-grow: 1;
-    margin-bottom: 10px;
   }
   .card-image-holder{
     position: relative;
@@ -64,28 +70,34 @@
       font-size: 18px;
       display: flex;
       align-items: center;
+      transition: all .3s ease;
+      &:hover{
+        color: #F75555;
+      }
     }
   }
   .star-rating{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
     margin-bottom: 13px;
     .rating-row{
       display: flex;
       margin-right: 10px;
     }
   }
+  .price-holder{
+    margin-bottom: 20px;
+  }
   .card-content{
     display: flex;
     flex-direction: column;
-    min-height: 66px;
     .title-link{
       text-decoration: none;
       color: inherit;
       text-align: center;
       flex-grow: 1;
+      min-height: 50px;
       transition: all .3s ease;
       &:hover{
         transform: scale(1.01);
@@ -117,8 +129,10 @@
     font-size: 18px;
     display: inline-block;
     margin-bottom: 10px;
+    transition: all .3s ease;
+    border: 1px solid #ffffff;
     &:hover{
-      box-shadow: 2px 2px 2px 2px #F75555;
+      border: 1px solid #F75555;
     }
   }
   .available{
@@ -131,8 +145,8 @@
     border-right: 2px solid #64CA53;
     border-top: 2px solid #64CA53;
     display: inline-block;
-    transform: rotate(135deg);
-    margin-right: 5px;
+    transform: rotate(135deg) translateY(5px);
+
   }
   .not-available{
     display: none;
@@ -148,37 +162,67 @@
     background-position: center;
     margin-right: 5px;
   }
-  a.link-img:hover>img{
-    filter: drop-shadow(2px 2px 5px #C4C4C4);
-  }
+ }
 }
 
 .card--available{
-  .available{
+  .card-wrapper .available{
     display: block;
   }
 }
 
 .card--not-available{
-  .not-available{
+  .card-wrapper .not-available{
     display: block;
   }
 }
 
 .card--discount{
-  .card-image-holder{
+  .card-wrapper .card-image-holder{
     .discount-img{
       display: block;
     }
   }
-  .price-holder{
+  .card-wrapper .price-holder{
     .old-price{
       display: inline-block;
     }
   }
 }
 
-.card-wrapper{
-  display: flex;
-  flex-direction: column;
+.card{
+  outline: none;
 }
+
+.popular__slider .slick-arrow{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px;
+  background: none;
+  border: none;
+  font-size: 0;
+  outline: none;
+  &:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-135deg);
+    content: "";
+    border-top: 1px solid #989898;
+    border-right: 1px solid #989898;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.popular__slider .slick-next{
+  right: -35px;
+  left: auto;
+  &:before{
+    transform: rotate(45deg);
+  }
+}
+
+
