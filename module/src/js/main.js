@@ -12,7 +12,7 @@ $(document).ready(function(){
     $('.promo-slider').slick({
         dots:true,
         arrows: true,
-        autoplay:false
+        autoplay:true
     });
 });
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
     $('.popular__slider').slick({
         dots:false,
         arrows: true,
-        autoplay:false,
+        autoplay:true,
         slidesToShow: 1,
         slidesToScroll:1,
         variableWidth: true,
