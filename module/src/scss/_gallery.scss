@@ -1,5 +1,4 @@
 .gallery {
-  margin-bottom: 23px;
 
   &__main {
     position: relative;
@@ -94,9 +93,9 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 50%;
-    align-items: flex-start;
     margin: 0;
     padding: 0;
+    align-items: stretch;
   }
 
   &__item {

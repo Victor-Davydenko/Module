@@ -5,6 +5,7 @@
 @import "icons";
 @import "slick";
 @import "gallery";
+@import "gallery-extend";
 @import "_recommend";
 @import "news";
 @import "subscribe";
@@ -61,6 +62,34 @@ body{
   text-transform: uppercase;
 
   color: #051521;
+}
+
+.breadcrumbs {
+
+  &__wrapper {
+    list-style: none;
+    color: #051521;
+    display: flex;
+    padding: 20px 0;
+  }
+
+  &__item {
+    margin-right: 11px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      margin-right: 11px;
+    }
+
+    i {
+      font-size: 18px;
+    }
+
+    &__text {
+      cursor: default;
+    }
+  }
 }
 
 
