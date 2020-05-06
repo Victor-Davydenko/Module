@@ -1,0 +1,40 @@
+
+.etabs{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .tab{
+    margin-right: 114px;
+    padding: 10px 20px;
+  }
+}
+.tab a{
+  color: #112838;
+  text-decoration: none;
+}
+.tab a.active{
+  color: #F75555;
+
+}
+
+.tab a.active .tab{
+  border-bottom: 1px solid #F75555;
+}
+
+.tabs-row{
+  background: #ffffff;
+  color: #112838;
+  padding: 11px 29px;
+  display: flex;
+  &:last-child{
+    align-items: flex-end;
+    padding-bottom: 29px;
+  }
+  &:first-child{
+    padding-top: 29px;
+  }
+  .property{
+    min-width: 150px;
+  }
+}
