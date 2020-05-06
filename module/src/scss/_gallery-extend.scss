@@ -1,0 +1,37 @@
+
+.gallery {
+
+  &__list--tourism {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  &__item--tourism {
+    max-width: 262px;
+    margin:  0 5px 20px 5px;
+  }
+
+  &--tourism {
+    .gallery__main {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .gallery--tourism {
+
+    .gallery__list {
+      justify-content: center;
+    }
+
+    .gallery__main {
+      display: block;
+    }
+
+    .gallery__item {
+      margin: 0;
+      max-width: 50%;
+    }
+  }
+}
