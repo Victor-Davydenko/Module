@@ -36,6 +36,7 @@
     font-size: 1.2vw;
     letter-spacing: 1.7px;
     padding: 1.2vw 2.9vw;
+    border: 2px solid #f75555;
   }
 }
 .sick-slide{
@@ -94,6 +95,7 @@
       font-size: 0;
       background: none;
       border: none;
+      outline: none;
     }
   }
   .slick-active{

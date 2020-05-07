@@ -48,6 +48,11 @@ $('#star8').raty({
     path: "images"
 });
 
+$('#star9').raty({
+    path: "images"
+});
+
+
 $(document).ready(function(){
     $('.popular__slider').slick({
         dots:false,
