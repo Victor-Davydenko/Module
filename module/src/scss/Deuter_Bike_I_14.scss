@@ -144,12 +144,13 @@
   font-size: 16px;
   line-height: 19px;
   padding: 0 0 0 41px;
+  flex-grow: 1;
 
   h1 {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
   }
 
   .star-rating {
@@ -164,6 +165,10 @@
 
     .estimation {
       margin-right: 18px;
+    }
+
+    .icon-bubble2 {
+      margin-right: 5px;
     }
 
     &__comments {
@@ -319,5 +324,80 @@
     max-height: 45px;
     padding: 15px;
     margin-bottom: 10px;
+  }
+}
+
+/*-------------ADVANTAGE-------------*/
+
+.product__advantage {
+  max-width: 260px;
+  width: 100%;
+  padding: 24px 0;
+  background: #ebecee;
+  margin-bottom: 10px;
+
+  &__holder {
+    display: flex;
+    color: #486175;
+  }
+
+  &__ico {
+    max-width: 56px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+
+    i {
+      padding-left: 20px;
+    }
+  }
+
+  &__text {
+    flex-grow: 1;
+    padding-right: 11px;
+
+    h4 {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      font-family: "Maven Pro", sans-serif;
+      color: #112838;
+      margin: 0 0 14px 0;
+      padding-left: 5px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}
+
+.product__advantage__wrapper .button {
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #112838;
+  padding: 12px 0;
+  margin-bottom: 10px;
+
+  i {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #112838;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: unset;
+    border: 1px solid #112838;
   }
 }
