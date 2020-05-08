@@ -342,6 +342,10 @@
     max-height: 45px;
     padding: 15px;
     margin-bottom: 10px;
+
+    &--white {
+      display: none;
+    }
   }
 }
 
@@ -448,9 +452,17 @@
 }
 
 @media (max-width: 499px) {
+  .breadcrumbs {
+    display: none;
+  }
 
   .container .heading__mobile {
     display: block;
+    font-family: "Maven Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .product__img-holder, .product__img-wrapper--bottom {
@@ -521,6 +533,10 @@
         margin-right: 20px;
       }
     }
+
+    .button--white {
+      display: block;
+    }
   }
 
   .product__description .button-holder {
@@ -548,5 +564,17 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 375px) {
+  .container .product__description .available {
+    top: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .product__description .available {
+    top: 40px;
   }
 }
