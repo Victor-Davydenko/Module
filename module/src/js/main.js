@@ -76,6 +76,18 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $('.product__slider').slick({
+        dots:true,
+        arrows: false,
+        autoplay:false,
+        slidesToShow: 1,
+        variableWidth: true,
+        centerMode: true
+    });
+});
+
+
 $('#tab-container').easytabs();
 
 
