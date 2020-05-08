@@ -573,8 +573,8 @@
   }
 }
 
-@media (min-width: 320px) {
-  .product__description .available {
-    top: 40px;
+@media (max-width: 350px) {
+  .container .product__description .available {
+    top: 40px
   }
 }
