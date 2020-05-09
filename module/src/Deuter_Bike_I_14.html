@@ -32,7 +32,8 @@
     </div>
     <div class="center-header">
       <div class="container">
-        <span class="menu-opener"></span>
+        <input type="checkbox" id="opener">
+        <label for="opener" class="lbl-opener"><span class="menu-opener"></span></label>
         <div class="burger-menu" id="burger">
           <div class="burger-menu__header">
             <strong class="logo"><img src="images/logo.png" alt="Вояж"></strong>
@@ -103,30 +104,405 @@
           <div id="tab-container" class="tab-container">
             <ul class='etabs'>
               <li class='tab'><a href="#tabs1">О товаре</a></li>
-              <li class='tab'><a href="#tabs2">Фото и видео (2)</a></li>
-              <li class='tab'><a href="#tabs3">Обзоры (9)</a></li>
-              <li class='tab'><a href="#tabs4">Отзывы (3)</a></li>
+              <li class='tab'><a href="#tabs2">Фото и видео <span class="photoamount">(8)</span></a></li>
+              <li class='tab'><a href="#tabs3">Обзоры <span class="reviewamount">(1)</span></a></li>
+              <li class='tab'><a href="#tabs4">Отзывы <span class="feedamount">(3)</span></a></li>
             </ul>
-            <div id="tabs1">
-              <div class="tabs-row"><span class="property">Описание:</span><span class="description">Deuter Bike I 14 представляет новый велорюкзак в классическом дизайне, который выглядит как предок этого рюкзака 25 летней давности. Но при этом новый Bike I выполнен по современным технологиями и с использованием лучших материалов. Рюкзак отлично подойдет для однодневных поездок на природе или в городе
-Рюкзак Deuter Bike I 14 - cочетание классического дизайна и технологических ноу-хау. Рюкзак велосипедиста предназначен для однодневных экскурсий по стране и городских условий. Limited Edition</span></div>
-              <div class="tabs-row"><span class="property">Пол:</span><span class="description">Унисекс</span></div>
-              <div class="tabs-row"><span class="property">Назначение:</span><span class="description">Велопоходы, велоспорт, городской, мультиспорт</span></div>
-              <div class="tabs-row"><span class="property">Наличие клапана:</span><span class="description">Без клапана</span></div>
-              <div class="tabs-row"><span class="property">Объем, л:</span><span class="description">16</span></div>
-              <div class="tabs-row"><span class="property">Вес, кг:</span><span class="description">0.75</span></div>
-              <div class="tabs-row"><span class="property">Габариты, см:</span><span class="description">46x23x17</span></div>
-              <div class="tabs-row"><span class="property">Материалы:</span><span class="description">Duratex Bright / Ripstop-Polytex</span></div>
-              <div class="tabs-row"><span class="property">Наличие дождевогo чехла:</span><span class="description">нет</span></div>
+            <div id="tabs1" class="tab-inner">
+              <div class="tabs-row"><span class="property">Описание:</span><div class="description"><p>Deuter Bike I 14 представляет новый велорюкзак в классическом дизайне, который выглядит как предок этого рюкзака 25 летней давности. Но при этом новый Bike I выполнен по современным технологиями и с использованием лучших материалов. Рюкзак отлично подойдет для однодневных поездок на природе или в городе</p>
+                <p>Рюкзак Deuter Bike I 14 - cочетание классического дизайна и технологических ноу-хау. Рюкзак велосипедиста предназначен для однодневных экскурсий по стране и городских условий. Limited Edition</p></div></div>
+              <div class="tabs-row"><span class="property">Пол:</span><div class="description">Унисекс</div></div>
+              <div class="tabs-row"><span class="property">Назначение:</span><div class="description">Велопоходы, велоспорт, городской, мультиспорт</div></div>
+              <div class="tabs-row"><span class="property">Наличие клапана:</span><div class="description">Без клапана</div></div>
+              <div class="tabs-row"><span class="property">Объем, л:</span><div class="description">16</div></div>
+              <div class="tabs-row"><span class="property">Вес, кг:</span><div class="description">0.75</div></div>
+              <div class="tabs-row"><span class="property">Габариты, см:</span><div class="description">46x23x17</div></div>
+              <div class="tabs-row"><span class="property">Материалы:</span><div class="description">Duratex Bright / Ripstop-Polytex</div></div>
+              <div class="tabs-row"><span class="property">Наличие дождевогo чехла:</span><div class="description">нет</div></div>
             </div>
-            <div id="tabs2">
-
+            <div id="tabs2" class="tab-inner">
+              <div class="pop-up-holder">
+                <div class="popup-gallery">
+                  <a href="images/backpack.png"><img src="images/backpack.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack1.png"><img src="images/backpack1.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack2.png"><img src="images/backpack2.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack3.png"><img src="images/backpack3.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack4.png"><img src="images/backpack4.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack5.png"><img src="images/backpack5.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack6.png"><img src="images/backpack6.png" alt="backpack" width="175" height="175"></a>
+                  <a href="images/backpack7.png"><img src="images/backpack7.png" alt="backpack" width="175" height="175"></a>
+                </div>
+              </div>
             </div>
-            <div id="tabs3">
-
+            <div id="tabs3" class="tab-inner tab-inner-iframe">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/qq6NOZixgGs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div id="tabs4">
-
+            <div id="tabs4" class="tab-inner">
+              <div class="feedback-holder">
+                <input type="checkbox" id="btn-id">
+                <label for="btn-id"><span class="button">Добавить отзыв</span></label>
+                <div class="feedback-adder">
+                  <div class="feedback-form">
+                    <div class="feedback-adder__form-holder">
+                      <div class="estimation-holder">
+                        <span class="your-estimation">Ваша оценка</span>
+                        <div id="personal-estimation" class="rating-row"></div>
+                      </div>
+                      <form action="#" class="subscribe__form">
+                        <div class="subscribe__input-wrapper">
+                          <input placeholder="Имя" type="text">
+                        </div>
+                        <div class="subscribe__input-wrapper">
+                          <input placeholder="Эл. почта" type="email">
+                        </div>
+                        <div class="subscribe__input-wrapper subscribe__input-wrapper--adv">
+                          <input placeholder="Достоинства" type="text">
+                        </div>
+                        <div class="subscribe__input-wrapper subscribe__input-wrapper--disadv">
+                          <input placeholder="Недостатки" type="text">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="feedback-sender">
+                    <input type="image" width="264px" height="147px">
+                    <button class="button">Добавить отзыв</button>
+                  </div>
+                </div>
+                <div class="feedback-block">
+                  <div class="feedback feedback--pure">
+                    <div class="personal-data">
+                      <div class="avatar-holder">
+                        <img src="images/leonid.png" alt="avatar">
+                      </div>
+                      <div class="data-holder">
+                        <span class="name">Леонид</span>
+                        <span class="date">21 марта 2019</span>
+                        <div id="personal1-estimation" class="rating-row"></div>
+                      </div>
+                    </div>
+                    <div class="feedback-content">
+                      <div class="feedback-content-inner">
+                        <div class="uploaded-photo">
+                          <img src="images/backpack3.png" alt="backpack">
+                        </div>
+                        <span class="adv">Достоинства:</span>
+                        <p class="adv-content">Очень красивый и удобный рюкзак! Вместительный, ровные швы, есть замочек к карману и дождевик, ткань плотная.</p>
+                        <span class="disadv">Недостатки:</span>
+                        <p class="disadv-content">Кабели выглядят не очень надежно.</p>
+                      </div>
+                      <form action="#">
+                        <div class="leave-comment">
+                          <input type="text" id="leave-comment1" placeholder="Оставить комментарий">
+                          <label for="leave-comment1"></label>
+                        </div>
+                        <div class="icon-holder">
+                          <button class="like" href="#"></button>
+                          <span class="amount-like">2</span>
+                          <button href="#" class="dislike"></button>
+                          <span class="amount-dislike">0</span>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="question-holder">
+                      <div class="question-personal-data">
+                        <div class="data-holder">
+                          <span class="name">Артем</span>
+                          <span class="date">25 марта 2020</span>
+                        </div>
+                        <span class="question">А дождевик как выглядит?</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback feedback--photo">
+                    <div class="personal-data">
+                      <div class="avatar-holder">
+                        <img src="images/avatar2.png" alt="avatar">
+                      </div>
+                      <div class="data-holder">
+                        <span class="name">Алеся</span>
+                        <span class="date">21 марта 2019</span>
+                        <div id="personal2-estimation" class="rating-row"></div>
+                      </div>
+                    </div>
+                    <div class="feedback-content">
+                      <div class="uploaded-photo">
+                        <img src="images/backpack3.png" alt="backpack">
+                      </div>
+                      <span class="adv">Достоинства:</span>
+                      <p class="adv-content">Огромное количество отделений в рюкзаке. Сам по себе довольно вместительный.</p>
+                      <span class="disadv">Недостатки:</span>
+                      <p class="disadv-content">Не обнаружила.</p>
+                      <form action="#">
+                        <div class="leave-comment">
+                          <input type="text" id="leave-comment2" placeholder="Оставить комментарий">
+                          <label for="leave-comment2"></label>
+                        </div>
+                        <div class="icon-holder">
+                          <button class="like" href="#"></button>
+                          <span class="amount-like">2</span>
+                          <button href="#" class="dislike"></button>
+                          <span class="amount-dislike">0</span>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="question-holder">
+                      <div class="question-personal-data">
+                        <div class="data-holder">
+                          <span class="name">Артем</span>
+                          <span class="date">25 марта 2020</span>
+                        </div>
+                        <span class="question">А дождевик как выглядит?</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback feedback--comment">
+                    <div class="personal-data">
+                      <div class="avatar-holder">
+                        <img src="images/andrew.png" alt="avatar">
+                      </div>
+                      <div class="data-holder">
+                        <span class="name">Андрей</span>
+                        <span class="date">21 марта 2019</span>
+                        <div id="personal3-estimation" class="rating-row"></div>
+                      </div>
+                    </div>
+                    <div class="feedback-content">
+                      <div class="uploaded-photo">
+                        <img src="images/backpack3.png" alt="backpack">
+                      </div>
+                      <span class="adv">Достоинства:</span>
+                      <p class="adv-content">Отличный мужской рюкзак. Приятным удивлением было наличие дождевика. Нужная и практичная вещь в поездках, походах и в повседневной жизни.</p>
+                      <span class="disadv">Недостатки:</span>
+                      <p class="disadv-content">Недостатков нет.</p>
+                      <form action="#">
+                        <div class="leave-comment">
+                          <input type="text" id="leave-comment3" placeholder="Оставить комментарий">
+                          <label for="leave-comment3"></label>
+                        </div>
+                        <div class="icon-holder">
+                          <button class="like" href="#"></button>
+                          <span class="amount-like">2</span>
+                          <button href="#" class="dislike"></button>
+                          <span class="amount-dislike">0</span>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="question-holder">
+                      <div class="question-personal-data">
+                        <div class="data-holder">
+                          <span class="name">Артем</span>
+                          <span class="date">25 марта 2020</span>
+                        </div>
+                        <span class="question">А дождевик как выглядит?</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-close-holder">
+          <input type="checkbox" id="first-tab">
+          <label for="first-tab" class="opener"><span>О товаре</span></label>
+          <div class="first-tabs-row-holder tabs-row-holder">
+            <div class="tabs-row"><span class="property">Описание:</span><span class="description">Deuter Bike I 14 представляет новый велорюкзак в классическом дизайне, который выглядит как предок этого рюкзака 25 летней давности. Но при этом новый Bike I выполнен по современным технологиями и с использованием лучших материалов. Рюкзак отлично подойдет для однодневных поездок на природе или в городе
+                  Рюкзак Deuter Bike I 14 - cочетание классического дизайна и технологических ноу-хау. Рюкзак велосипедиста предназначен для однодневных экскурсий по стране и городских условий. Limited Edition</span></div>
+            <div class="tabs-row"><span class="property">Пол:</span><span class="description">Унисекс</span></div>
+            <div class="tabs-row"><span class="property">Назначение:</span><span class="description">Велопоходы, велоспорт, городской, мультиспорт</span></div>
+            <div class="tabs-row"><span class="property">Наличие клапана:</span><span class="description">Без клапана</span></div>
+            <div class="tabs-row"><span class="property">Объем, л:</span><span class="description">16</span></div>
+            <div class="tabs-row"><span class="property">Вес, кг:</span><span class="description">0.75</span></div>
+            <div class="tabs-row"><span class="property">Габариты, см:</span><span class="description">46x23x17</span></div>
+            <div class="tabs-row"><span class="property">Материалы:</span><span class="description">Duratex Bright / Ripstop-Polytex</span></div>
+            <div class="tabs-row"><span class="property">Наличие дождевогo чехла:</span><span class="description">нет</span></div>
+          </div>
+          <input type="checkbox" id="second-tab">
+          <label for="second-tab" class="opener"><span>Фото и видео</span></label>
+          <div class="second-tabs-row-holder tabs-row-holder">
+            <div class="pop-up-holder">
+              <div class="popup-gallery">
+                <a href="images/backpack.png"><img src="images/backpack.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack1.png"><img src="images/backpack1.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack2.png"><img src="images/backpack2.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack3.png"><img src="images/backpack3.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack4.png"><img src="images/backpack4.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack5.png"><img src="images/backpack5.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack6.png"><img src="images/backpack6.png" alt="backpack" width="175" height="175"></a>
+                <a href="images/backpack7.png"><img src="images/backpack7.png" alt="backpack" width="175" height="175"></a>
+              </div>
+            </div>
+          </div>
+          <input type="checkbox" id="third-tab">
+          <label for="third-tab" class="opener"><span>Обзоры</span></label>
+          <div class="third-tabs-row-holder tabs-row-holder">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qq6NOZixgGs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <input type="checkbox" id="fourth-tab">
+          <label for="fourth-tab" class="opener"><span>Отзывы</span></label>
+          <div class="fourth-tabs-row-holder tabs-row-holder">
+            <div class="feedback-holder">
+              <input type="checkbox" id="btnn-id">
+              <label for="btnn-id"><span class="button">Добавить отзыв</span></label>
+              <div class="feedback-adder">
+                <div class="feedback-form">
+                  <div class="feedback-adder__form-holder">
+                    <div class="estimation-holder">
+                      <span class="your-estimation">Ваша оценка</span>
+                      <div id="personal4-estimation" class="rating-row"></div>
+                    </div>
+                    <form action="#" class="subscribe__form">
+                      <div class="subscribe__input-wrapper">
+                        <input placeholder="Имя" type="text">
+                      </div>
+                      <div class="subscribe__input-wrapper">
+                        <input placeholder="Эл. почта" type="email">
+                      </div>
+                      <div class="subscribe__input-wrapper subscribe__input-wrapper--adv">
+                        <input placeholder="Достоинства" type="text">
+                      </div>
+                      <div class="subscribe__input-wrapper subscribe__input-wrapper--disadv">
+                        <input placeholder="Недостатки" type="text">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="feedback-sender">
+                  <input type="image" width="264px" height="147px">
+                  <button class="button">Добавить отзыв</button>
+                </div>
+              </div>
+              <div class="feedback-block">
+                <div class="feedback feedback--pure">
+                  <div class="personal-data">
+                    <div class="avatar-holder">
+                      <img src="images/leonid.png" alt="avatar">
+                    </div>
+                    <div class="data-holder">
+                      <span class="name">Леонид</span>
+                      <span class="date">21 марта 2019</span>
+                      <div id="personal5-estimation" class="rating-row"></div>
+                    </div>
+                  </div>
+                  <div class="feedback-content">
+                    <div class="feedback-content-inner">
+                      <div class="uploaded-photo">
+                        <img src="images/backpack3.png" alt="backpack">
+                      </div>
+                      <span class="adv">Достоинства:</span>
+                      <p class="adv-content">Очень красивый и удобный рюкзак! Вместительный, ровные швы, есть замочек к карману и дождевик, ткань плотная.</p>
+                      <span class="disadv">Недостатки:</span>
+                      <p class="disadv-content">Кабели выглядят не очень надежно.</p>
+                    </div>
+                    <form action="#">
+                      <div class="leave-comment">
+                        <input type="text" id="leave-comment5" placeholder="Оставить комментарий">
+                        <label for="leave-comment5"></label>
+                      </div>
+                      <div class="icon-holder">
+                        <button class="like" href="#"></button>
+                        <span class="amount-like">2</span>
+                        <button href="#" class="dislike"></button>
+                        <span class="amount-dislike">0</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="question-holder">
+                    <div class="question-personal-data">
+                      <div class="data-holder">
+                        <span class="name">Артем</span>
+                        <span class="date">25 марта 2020</span>
+                      </div>
+                      <span class="question">А дождевик как выглядит?</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback feedback--photo">
+                  <div class="personal-data">
+                    <div class="avatar-holder">
+                      <img src="images/avatar2.png" alt="avatar">
+                    </div>
+                    <div class="data-holder">
+                      <span class="name">Алеся</span>
+                      <span class="date">21 марта 2019</span>
+                      <div id="personal6-estimation" class="rating-row"></div>
+                    </div>
+                  </div>
+                  <div class="feedback-content">
+                    <div class="uploaded-photo">
+                      <img src="images/backpack3.png" alt="backpack">
+                    </div>
+                    <span class="adv">Достоинства:</span>
+                    <p class="adv-content">Огромное количество отделений в рюкзаке. Сам по себе довольно вместительный.</p>
+                    <span class="disadv">Недостатки:</span>
+                    <p class="disadv-content">Не обнаружила.</p>
+                    <form action="#">
+                      <div class="leave-comment">
+                        <input type="text" id="leave-comment6" placeholder="Оставить комментарий">
+                        <label for="leave-comment6"></label>
+                      </div>
+                      <div class="icon-holder">
+                        <button class="like" href="#"></button>
+                        <span class="amount-like">2</span>
+                        <button href="#" class="dislike"></button>
+                        <span class="amount-dislike">0</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="question-holder">
+                    <div class="question-personal-data">
+                      <div class="data-holder">
+                        <span class="name">Артем</span>
+                        <span class="date">25 марта 2020</span>
+                      </div>
+                      <span class="question">А дождевик как выглядит?</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback feedback--comment">
+                  <div class="personal-data">
+                    <div class="avatar-holder">
+                      <img src="images/andrew.png" alt="avatar">
+                    </div>
+                    <div class="data-holder">
+                      <span class="name">Андрей</span>
+                      <span class="date">21 марта 2019</span>
+                      <div id="personal7-estimation" class="rating-row"></div>
+                    </div>
+                  </div>
+                  <div class="feedback-content">
+                    <div class="uploaded-photo">
+                      <img src="images/backpack3.png" alt="backpack">
+                    </div>
+                    <span class="adv">Достоинства:</span>
+                    <p class="adv-content">Отличный мужской рюкзак. Приятным удивлением было наличие дождевика. Нужная и практичная вещь в поездках, походах и в повседневной жизни.</p>
+                    <span class="disadv">Недостатки:</span>
+                    <p class="disadv-content">Недостатков нет.</p>
+                    <form action="#">
+                      <div class="leave-comment">
+                        <input type="text" id="leave-comment7" placeholder="Оставить комментарий">
+                        <label for="leave-comment7"></label>
+                      </div>
+                      <div class="icon-holder">
+                        <button class="like" href="#"></button>
+                        <span class="amount-like">2</span>
+                        <button href="#" class="dislike"></button>
+                        <span class="amount-dislike">0</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="question-holder">
+                    <div class="question-personal-data">
+                      <div class="data-holder">
+                        <span class="name">Артем</span>
+                        <span class="date">25 марта 2020</span>
+                      </div>
+                      <span class="question">А дождевик как выглядит?</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -149,7 +525,7 @@
                     <img src="images/discount-img.png" alt="discount">
                   </div>
                   <a href="#" class="link-img">
-                    <img src="images/sleeping-bag.png" alt="Спальный мешок Deuter Dream Lite 350">
+                    <img src="images/backpack3.png" alt="backpack">
                   </a>
                 </div>
                 <div class="star-rating">
@@ -159,7 +535,7 @@
                 <div class="card-content">
                   <a href="#" class="title-link">
                     <h3 class="card-title">
-                      Спальный мешок Deuter Dream Lite 350
+                      Рюкзак Deuter Dream Lite 350
                     </h3>
                   </a>
                   <div class="price-holder">
@@ -192,7 +568,7 @@
                     <img src="images/discount-img.png" alt="discount">
                   </div>
                   <a href="#" class="link-img">
-                    <img src="images/helmet.png" alt="Каска Black Diamond Vector">
+                    <img src="images/backpack5.png" alt="Каска Black Diamond Vector">
                   </a>
                 </div>
                 <div class="star-rating">
@@ -202,7 +578,7 @@
                 <div class="card-content">
                   <a href="#" class="title-link">
                     <h3 class="card-title">
-                      Каска Black Diamond Vector
+                      Рюкзак Black Diamond Vector
                     </h3>
                   </a>
                   <div class="price-holder">
@@ -278,7 +654,7 @@
                     <img src="images/discount-img.png" alt="discount">
                   </div>
                   <a href="#" class="link-img">
-                    <img src="images/knife.png" alt="Мультитул Leatherman Signal (BOX)">
+                    <img src="images/backpack6.png" alt="Мультитул Leatherman Signal (BOX)">
                   </a>
                 </div>
                 <div class="star-rating">
@@ -288,7 +664,7 @@
                 <div class="card-content">
                   <a href="#" class="title-link">
                     <h3 class="card-title">
-                      Мультитул Leatherman Signal (BOX)
+                      Рюкзак Leatherman Signal (BOX)
                     </h3>
                   </a>
                   <div class="price-holder">
@@ -519,6 +895,7 @@
   </footer>
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/magnific.js"></script>
 <script src="js/jquery.hashchange.min.js"></script>
 <script src="js/jquery.easytabs.min.js"></script>
 <script src="js/jquery.raty.min.js"></script>

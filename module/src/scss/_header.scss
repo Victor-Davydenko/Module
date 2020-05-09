@@ -96,9 +96,11 @@
 .form-holder{
   flex-basis: 437px;
   margin-right: 32px;
+  flex-shrink: 4;
   .search-form{
     width: 100%;
     position: relative;
+    display: block;
     input{
       width: 100%;
       border: none;
@@ -108,6 +110,7 @@
       color: #fff;
       line-height: 18px;
       padding-right: 30px;
+      display: block;
     }
     input::placeholder{
       color: #fff;
@@ -124,7 +127,7 @@
       color: #ffffff;
       font-size: 20px;
       transition: all .3s ease;
-
+      display: block;
       &:hover{
         color: #F75555;
       }
@@ -141,9 +144,13 @@
     margin-right: 49px;
     a{
       text-decoration: none;
-      color: #fff;
+      color: #021A37;
       font-size: 30px;
       transition: all .3s ease;
+      i{
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+      }
       &:hover{
         color: #F75555;
       }
@@ -153,12 +160,16 @@
 
 .center-header .cart-link{
   text-decoration: none;
-  color: #ffffff;
+  color: #0A294E;
   background: #0A294E;
   border-radius: 5px;
   padding: 10px 17px 10px 17px;
   transition: all .3s ease;
   white-space: nowrap;
+  i{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+  }
   &:hover{
     color: #F75555;
   }
@@ -175,6 +186,9 @@
     }
     li:first-child{
       font-size: 30px;
+    }
+    li:last-child{
+      color: #ffffff;
     }
   }
 }
@@ -205,6 +219,7 @@
   }
 }
 
+
 .burger-menu{
   position: fixed;
   width: 306px;
@@ -212,7 +227,6 @@
   display: none;
   top:0;
   left: 0;
-  bottom: 0;
   bottom: 0;
   &__header{
     padding: 5px 20px;
@@ -321,7 +335,28 @@
     }
   }
 }
+#opener{
+  display: none;
+}
+#opener:checked~ .burger-menu{
+  display: block;
+}
 
+#opener:checked~ .lbl-opener{
+  position: relative;
+  top: -15px;
+  left: 256px;
+  z-index: 4;
+}
+#opener:checked~ .lbl-opener>.menu-opener{
+  transform: rotate(45deg);
+  &:before{
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  &:after{
+    visibility: hidden;
+  }
+}
 
 .bottom-header {
   padding: 13px 0 15px 0;
@@ -343,6 +378,10 @@
     font-family: 'Maven Pro', Sans-serif;
     font-size: 18px;
     line-height: 21px;
+    transition: all .3s ease;
+    &:hover{
+      color: #F75555;
+    }
   }
   li:first-child{
     padding: 15px 0 15px 60px;
@@ -393,7 +432,9 @@
     .form-holder{
       position: absolute;
       right: 60px;
-      top: 65px;
+      top: 75px;
+      left: 0;
+      margin-left: 60px;
     }
   }
 
@@ -421,7 +462,5 @@
       display: block;
     }
   }
-  .menu-opener.menu-opened~.burger-menu{
-    display: block;
-  }
+
 }

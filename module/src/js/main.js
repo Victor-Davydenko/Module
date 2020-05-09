@@ -1,16 +1,7 @@
-$(".menu-opener").click(function() {
-    $('.burger-menu').toggle();
-});
-$(document).on('click', function(e) {
-    if (!$(e.target).closest(".center-header .container").length) {
-        $('.burger-menu').hide();
-    }
-    e.stopPropagation();
-});
 
 $(document).ready(function(){
     $('.promo-slider').slick({
-        dots:true,
+        dots:false,
         arrows: true,
         autoplay:true
     });
@@ -48,10 +39,46 @@ $('#star8').raty({
     path: "images"
 });
 
+$('#personal-estimation').raty({
+    path: "images"
+});
+
+$('#personal1-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+
+$('#personal2-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+
+$('#personal3-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+
+$('#personal4-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+$('#personal5-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+$('#personal6-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+$('#personal7-estimation').raty({
+    path: "images",
+    readOnly:true,
+});
+
 $(document).ready(function(){
     $('.popular__slider').slick({
         dots:false,
-        arrows: true,
+        arrows: false,
         autoplay:true,
         slidesToShow: 1,
         slidesToScroll:1,
@@ -73,4 +100,24 @@ $(document).ready(function(){
 
 $('#tab-container').easytabs();
 
+
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
+});
 
