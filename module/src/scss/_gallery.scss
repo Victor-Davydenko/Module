@@ -66,6 +66,10 @@
       border: 3px solid #F75555;
       position: relative;
 
+      &:hover {
+        border: 3px solid #f75555;
+      }
+
       i {
         position: absolute;
         top: 50%;

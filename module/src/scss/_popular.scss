@@ -64,6 +64,7 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
+
     a{
       text-decoration: none;
       color: #C4C4C4;
@@ -74,6 +75,10 @@
       &:hover{
         color: #F75555;
       }
+    }
+
+    &-review {
+      margin-left: 5px;
     }
   }
   .star-rating{
