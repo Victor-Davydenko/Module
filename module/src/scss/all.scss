@@ -46,10 +46,14 @@ body{
   background: #F75555;
   border-radius: 5px;
   transition: all .3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover{
     color:#F75555;
     background: #ffffff;
+    border: 2px solid #F75555;
   }
 }
 
@@ -86,10 +90,6 @@ body{
 
     i {
       font-size: 18px;
-    }
-
-    &__text {
-      cursor: default;
     }
   }
 }
