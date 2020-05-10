@@ -133,7 +133,7 @@ $(document).ready(function() {
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            
+
         }
     });
 });
