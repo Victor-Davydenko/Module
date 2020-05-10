@@ -350,6 +350,14 @@
       display: none;
     }
   }
+  input[type=image]{
+    width: 264px;
+    height: 147px;
+  }
+  .like,
+  .dislike{
+    cursor: pointer;
+  }
 }
 
 
