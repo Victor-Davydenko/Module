@@ -36,8 +36,10 @@
     font-size: 1.2vw;
     letter-spacing: 1.7px;
     padding: 1.2vw 2.9vw;
-
     border: 1px solid #F75555;
+    &:hover{
+      border: 1px solid #F75555;
+    }
   }
 }
 .sick-slide{
